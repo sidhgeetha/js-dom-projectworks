@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BG Color Switcher</title>
+        <link rel="icon" type="image/svg+xml"
+            href="https://api.iconify.design/logos:randomcolor.svg" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-50">
+
+        <main class="max-w-4xl py-24 mx-auto">
+
+            <div
+                class=" flex justify-between items-center gap-4 rounded-2xl mb-20 gap-8 p-4 ">
+                <div class="flex flex-row items-center gap-4">
+                    <h5
+                        class="text-4xl font-extrabold bg-gradient-to-r from-cyan-300 via-green-400 to-yellow-300 bg-clip-text text-transparent">BG
+                        color-switch!</h5>
+                    <img class="w-16 h-16 "
+                        src="https://api.iconify.design/logos:randomcolor.svg" />
+                </div>
+
+                <div class=" flex justify-between items-center gap-4 bg-gray-400 p-2 rounded-2xl backdrop-blur-md shadow-md">
+                    <button id="moon" class>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24"
+                            viewBox="0 0 24 24"><!-- Icon from Material Line Icons by Vjacheslav Trushkin - https://github.com/cyberalien/line-md/blob/master/license.txt --><g
+                                fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"><path stroke-dasharray="2"
+                                    stroke-dashoffset="2"
+                                    d="M12 19v1M19 12h1M12 5v-1M5 12h-1"><animate
+                                        fill="freeze" attributeName="d"
+                                        begin="0.6s" dur="0.2s"
+                                        values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1" /><animate
+                                        fill="freeze"
+                                        attributeName="stroke-dashoffset"
+                                        begin="0.6s" dur="0.2s"
+                                        values="2;0" /></path><path
+                                    stroke-dasharray="2" stroke-dashoffset="2"
+                                    d="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5"><animate
+                                        fill="freeze" attributeName="d"
+                                        begin="0.8s" dur="0.2s"
+                                        values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5" /><animate
+                                        fill="freeze"
+                                        attributeName="stroke-dashoffset"
+                                        begin="0.8s" dur="0.2s"
+                                        values="2;0" /></path><animatetransform
+                                    attributeName="transform" dur="30s"
+                                    repeatCount="indefinite" type="rotate"
+                                    values="0 12 12;360 12 12" /></g><mask
+                                id="SVGpCD1890p"><circle cx="12" cy="12" r="12"
+                                    fill="#fff" /><circle cx="12" cy="12"
+                                    r="8"><animate fill="freeze"
+                                        attributeName="r" dur="0.4s"
+                                        values="8;4" /></circle><circle cx="18"
+                                    cy="6" r="12" fill="#fff"><animate
+                                        fill="freeze" attributeName="cx"
+                                        dur="0.4s" values="18;22" /><animate
+                                        fill="freeze" attributeName="cy"
+                                        dur="0.4s" values="6;2" /><animate
+                                        fill="freeze" attributeName="r"
+                                        dur="0.4s"
+                                        values="12;3" /></circle><circle cx="18"
+                                    cy="6" r="10"><animate fill="freeze"
+                                        attributeName="cx" dur="0.4s"
+                                        values="18;22" /><animate fill="freeze"
+                                        attributeName="cy" dur="0.4s"
+                                        values="6;2" /><animate fill="freeze"
+                                        attributeName="r" dur="0.4s"
+                                        values="10;1" /></circle></mask><circle
+                                cx="12" cy="12" r="10" mask="url(#SVGpCD1890p)"
+                                fill="currentColor"><animate fill="freeze"
+                                    attributeName="r" dur="0.4s"
+                                    values="10;6" /></circle></svg>
+                    </button>
+                    <button id="sun" class>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24"
+                            viewBox="0 0 24 24"><!-- Icon from Material Line Icons by Vjacheslav Trushkin - https://github.com/cyberalien/line-md/blob/master/license.txt --><g
+                                fill="none" stroke="currentColor"
+                                stroke-dasharray="4" stroke-dashoffset="4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"><path
+                                    d="M13 4h1.5M13 4h-1.5M13 4v1.5M13 4v-1.5"><animate
+                                        id="SVGfDZ7Me6J" fill="freeze"
+                                        attributeName="stroke-dashoffset"
+                                        begin="0.6s;SVGfDZ7Me6J.begin+6s"
+                                        dur="0.4s" values="4;0" /><animate
+                                        fill="freeze"
+                                        attributeName="stroke-dashoffset"
+                                        begin="SVGfDZ7Me6J.begin+2s;SVGfDZ7Me6J.begin+4s"
+                                        dur="0.4s" values="4;0" /><animate
+                                        fill="freeze"
+                                        attributeName="stroke-dashoffset"
+                                        begin="SVGfDZ7Me6J.begin+1.2s;SVGfDZ7Me6J.begin+3.2s;SVGfDZ7Me6J.begin+5.2s"
+                                        dur="0.4s" values="0;4" /><set
+                                        fill="freeze" attributeName="d"
+                                        begin="SVGfDZ7Me6J.begin+1.8s"
+                                        to="M12 5h1.5M12 5h-1.5M12 5v1.5M12 5v-1.5" /><set
+                                        fill="freeze" attributeName="d"
+                                        begin="SVGfDZ7Me6J.begin+3.8s"
+                                        to="M12 4h1.5M12 4h-1.5M12 4v1.5M12 4v-1.5" /><set
+                                        fill="freeze" attributeName="d"
+                                        begin="SVGfDZ7Me6J.begin+5.8s"
+                                        to="M13 4h1.5M13 4h-1.5M13 4v1.5M13 4v-1.5" /></path><path
+                                    d="M19 11h1.5M19 11h-1.5M19 11v1.5M19 11v-1.5"><animate
+                                        id="SVGPKl0xTXr" fill="freeze"
+                                        attributeName="stroke-dashoffset"
+                                        begin="1s;SVGPKl0xTXr.begin+6s"
+                                        dur="0.4s" values="4;0" /><animate
+                                        fill="freeze"
+                                        attributeName="stroke-dashoffset"
+                                        begin="SVGPKl0xTXr.begin+2s;SVGPKl0xTXr.begin+4s"
+                                        dur="0.4s" values="4;0" /><animate
+                                        fill="freeze"
+                                        attributeName="stroke-dashoffset"
+                                        begin="SVGPKl0xTXr.begin+1.2s;SVGPKl0xTXr.begin+3.2s;SVGPKl0xTXr.begin+5.2s"
+                                        dur="0.4s" values="0;4" /><set
+                                        fill="freeze" attributeName="d"
+                                        begin="SVGPKl0xTXr.begin+1.8s"
+                                        to="M17 11h1.5M17 11h-1.5M17 11v1.5M17 11v-1.5" /><set
+                                        fill="freeze" attributeName="d"
+                                        begin="SVGPKl0xTXr.begin+3.8s"
+                                        to="M18 12h1.5M18 12h-1.5M18 12v1.5M18 12v-1.5" /><set
+                                        fill="freeze" attributeName="d"
+                                        begin="SVGPKl0xTXr.begin+5.8s"
+                                        to="M19 11h1.5M19 11h-1.5M19 11v1.5M19 11v-1.5" /></path><path
+                                    d="M19 4h1.5M19 4h-1.5M19 4v1.5M19 4v-1.5"><animate
+                                        id="SVGCevt2bLQ" fill="freeze"
+                                        attributeName="stroke-dashoffset"
+                                        begin="2.8s;SVGCevt2bLQ.begin+6s"
+                                        dur="0.4s" values="4;0" /><animate
+                                        fill="freeze"
+                                        attributeName="stroke-dashoffset"
+                                        begin="SVGCevt2bLQ.begin+2s" dur="0.4s"
+                                        values="4;0" /><animate fill="freeze"
+                                        attributeName="stroke-dashoffset"
+                                        begin="SVGCevt2bLQ.begin+1.2s;SVGCevt2bLQ.begin+3.2s"
+                                        dur="0.4s" values="0;4" /><set
+                                        fill="freeze" attributeName="d"
+                                        begin="SVGCevt2bLQ.begin+1.8s"
+                                        to="M20 5h1.5M20 5h-1.5M20 5v1.5M20 5v-1.5" /><set
+                                        fill="freeze" attributeName="d"
+                                        begin="SVGCevt2bLQ.begin+5.8s"
+                                        to="M19 4h1.5M19 4h-1.5M19 4v1.5M19 4v-1.5" /></path></g><g
+                                fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"><g><path stroke-dasharray="2"
+                                        stroke-dashoffset="4"
+                                        d="M12 21v1M21 12h1M12 3v-1M3 12h-1"><animate
+                                            fill="freeze"
+                                            attributeName="stroke-dashoffset"
+                                            dur="0.2s"
+                                            values="4;2" /></path><path
+                                        stroke-dasharray="2"
+                                        stroke-dashoffset="4"
+                                        d="M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"><animate
+                                            fill="freeze"
+                                            attributeName="stroke-dashoffset"
+                                            begin="0.2s" dur="0.2s"
+                                            values="4;2" /></path><set
+                                        fill="freeze" attributeName="opacity"
+                                        begin="0.5s" to="0" /></g><path
+                                    d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"
+                                    opacity="0"><set fill="freeze"
+                                        attributeName="opacity" begin="0.5s"
+                                        to="1" /></path></g><mask
+                                id="SVGBsVgBdfm"><circle cx="12" cy="12" r="12"
+                                    fill="#fff" /><circle cx="12" cy="12"
+                                    r="4"><animate fill="freeze"
+                                        attributeName="r" begin="0.1s"
+                                        dur="0.4s"
+                                        values="4;8" /></circle><circle cx="22"
+                                    cy="2" r="3" fill="#fff"><animate
+                                        fill="freeze" attributeName="cx"
+                                        begin="0.1s" dur="0.4s"
+                                        values="22;18" /><animate fill="freeze"
+                                        attributeName="cy" begin="0.1s"
+                                        dur="0.4s" values="2;6" /><animate
+                                        fill="freeze" attributeName="r"
+                                        begin="0.1s" dur="0.4s"
+                                        values="3;12" /></circle><circle cx="22"
+                                    cy="2" r="1"><animate fill="freeze"
+                                        attributeName="cx" begin="0.1s"
+                                        dur="0.4s" values="22;18" /><animate
+                                        fill="freeze" attributeName="cy"
+                                        begin="0.1s" dur="0.4s"
+                                        values="2;6" /><animate fill="freeze"
+                                        attributeName="r" begin="0.1s"
+                                        dur="0.4s"
+                                        values="1;10" /></circle></mask><circle
+                                cx="12" cy="12" r="6" mask="url(#SVGBsVgBdfm)"
+                                fill="currentColor"><animate fill="freeze"
+                                    attributeName="r" begin="0.1s" dur="0.4s"
+                                    values="6;10" /><set fill="freeze"
+                                    attributeName="opacity" begin="0.5s"
+                                    to="0" /></circle></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="max-w-4xl mx-auto p-8 rounded-3xl bg-indigo-100/50 backdrop-blur-md shadow-indigo-800/50 shadow-lg">
+                <div id="coloursDiv"
+                    class="flex flex-row justify-center gap-12">
+                    <div id="pink"
+                        class="w-24 h-24 rounded-full shadow-lg shadow-pink-500/50 bg-pink-500"></div>
+                    <div id="cyan"
+                        class="w-24 h-24 rounded-full shadow-lg shadow-cyan-400/50 bg-cyan-400"></div>
+                    <div id="rose"
+                        class="w-24 h-24 rounded-full shadow-lg shadow-rose-400/50 bg-rose-400"></div>
+                    <div id="blue"
+                        class="w-24 h-24 rounded-full shadow-lg shadow-blue-500/50 bg-blue-500"></div>
+                    <div id="green"
+                        class="w-24 h-24 rounded-full shadow-lg shadow-green-400/50 bg-green-400"></div>
+                    <div id="random"
+                        class="w-24 h-24 rounded-full bg-green-400 text-white font-extrabold flex items-center justify-center text-sm">Random</div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="index.html" class="text-blue-600 hover:underline">⬅️
+                    Back to Home</a>
+            </div>
+        </main>
+
+        <script type="module" src="./src/main.js"></script>
+    </body>
+</html>

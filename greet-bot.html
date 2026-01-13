@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Bot</title>
+    <link rel="icon" type="image/svg+xml" href="https://api.iconify.design/logos:android.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-slate-900 p-8 text-white text-3xl font-bold flex justify-center">
+      <h5>Greeting Bot! 🤖</h5>
+    </header>
+
+    <!-- Form -->
+    <main class="flex justify-center mt-8">
+      <form id="form" class="bg-slate-900 flex flex-col gap-3 justify-center p-20 rounded-xl shadow-lg">
+        <label class="font-medium text-lg text-white">Enter your name</label>
+        <input id="inputName" class="bg-white border p-2 rounded w-100" type="text" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" placeholder="name" required />
+        <button id="submit" type="submit" class="bg-cyan-400 text-white text-xl font-bold px-6 py-2 rounded-md">Greet</button>
+        <h2 id="greeting"></h2>
+      </form>
+    </main>
+
+    <div class="text-center mt-10">
+      <a href="index.html" class="text-blue-600 hover:underline">⬅️ Back to Home</a>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
