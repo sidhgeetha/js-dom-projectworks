@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const imgArea = document.createElement("img");
   imgArea.src = "/pen.png";
-  imgArea.className = "flex justify-center w-100 h-100";
+  imgArea.className = "h-96 w-full object-cover";
   cardContainer.appendChild(imgArea);
 
   const textArea = document.createElement("div");
