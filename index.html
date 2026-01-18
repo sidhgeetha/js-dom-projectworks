@@ -8,10 +8,10 @@
     <link rel="icon" type="image/svg+xml" href="/LogosJavascript.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-50 font-sans">
+  <body class="bg-gray-950 font-sans">
 
     <!-- Header -->
-    <header class="bg-slate-900 text-white pt-4 ">
+    <header class="bg-gray-950 text-white pt-4 border-b  border-gray-700 ">
       <div
         class="flex container text-center py-4 mx-auto px-4 justify-between mb-4">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
@@ -20,8 +20,8 @@
           <path
             d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257c0-18.044 13.747-31.792 35.228-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.732 12.03c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574" />
         </svg>
-        <h1 class="font-sand font-light text-4xl text-indigo-100">Cyberdude
-          Internship 2025</h1>
+        <h1 class="font-sand font-light text-2xl text-indigo-100">Cyberdude
+          Internship 2025-26</h1>
         <h1 class="text-2xl font-bold">
           JS-Tasks <span id="byBtn"
             class="bg-gradient-to-r from-red-400 via-pink-400 to-blue-400 text-white p-2">By
@@ -29,63 +29,219 @@
         </h1>
       </div>
 
-      <div class="flex flex-row">
-        <div
+      <div class="flex flex-row px-12">
+        <button id="allTasks"
           class=" ml-12 border border-slate-100/40 p-2 w-24 rounded-md  text-center font-bold">
           All tasks
-        </div>
-        <div
+        </button>
+        <button id="jan"
           class=" ml-12 border border-slate-100/40 p-2 w-24 rounded-md  text-center font-bold">
           Jan'26
-        </div>
-        <div
+        </button>
+        <button id="feb"
           class=" ml-12 border border-slate-100/40 p-2 w-24 rounded-md  text-center font-bold">
           Feb'26
-        </div>
+        </button>
       </div>
+
+    </div>
     </header>
 
     <section>
       <div class=" pl-12 flex flex-row gap-24 mt-12">
 
-        <!-- <div
-          class="border-2 p-2  bg-slate-200 rounded-full w-32 text-center font-bold">Feb'26</div>
-          <div
-          class="border-2 p-2   bg-slate-200 rounded-full w-32 text-center font-bold">Mar'26</div> -->
-
       </div>
     </section>
 
-    <section class="bg-white py-16 ">
+    <section class="bg-black py-16 ">
       <div class="container mx-auto px-4 text-center">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 ">
+  
+          <!-- task1 -->
+          <div
+            class="flex flex-col border rounded bg-gradient-to-r from-red-400 via-pink-400 to-blue-400 py-4 px-4 max-w-[250px]">
 
-          <div class="flex border rounded h-32 items-center px-6">
+            <div class="flex justify-between items-center mb-4">
+              <h1
+                class="bg-yellow-300 text-black p-1 rounded-md text-xs">Task1</h1>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                  height="32" viewBox="0 0 24 24"><mask id="SVGtXXaGeHA"
+                    width="24" height="24" x="0" y="0"><g fill="#fff"><ellipse
+                        cx="9.5" cy="9" rx="1.5" ry="1" /><ellipse cx="14.5"
+                        cy="9" rx="1.5" ry="1" /></g></mask><g fill="none"
+                    stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"><path
+                      stroke-dasharray="32" stroke-dashoffset="32"
+                      d="M12 4c1.67 0 2.61 0.4 3 0.5c0.53 -0.43 1.94 -1.5 3.5 -1.5c0.34 1 0.29 2.22 0 3c0.75 1 1 2 1 3.5c0 2.19 -0.48 3.58 -1.5 4.5c-1.02 0.92 -2.11 1.37 -3.5 1.5c0.65 0.54 0.5 1.87 0.5 2.5c0 0.73 0 3 0 3M12 4c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5c0 0.73 0 3 0 3"><animate
+                        fill="freeze" attributeName="stroke-dashoffset"
+                        dur="0.7s" values="32;0" /></path><path
+                      stroke-dasharray="10" stroke-dashoffset="10"
+                      d="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5"><animate
+                        attributeName="d" dur="3s" repeatCount="indefinite"
+                        values="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5;M9 19c-1.406 0-3-.5-4-.5-.532 0-1 0-2-.5;M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5" /><animate
+                        fill="freeze" attributeName="stroke-dashoffset"
+                        begin="0.8s" dur="0.2s" values="10;0" /></path></g><rect
+                    width="8" height="4" x="8" y="11" fill="currentColor"
+                    mask="url(#SVGtXXaGeHA)"><animate attributeName="y"
+                      dur="10s" keyTimes="0;0.45;0.46;0.54;0.55;1"
+                      repeatCount="indefinite"
+                      values="11;11;7;7;11;11" /></rect></svg>
 
-            <div class="flex flex-row items-center">
-              <h1 class="bg-yellow-300 text-black p-2 rounded-md">Day1</h1>
-
-              <a href="/greet-bot.html"
-                class="mx-4 text-center font-bold">
-                Greeting Bot
-              </a>
+              </svg>
             </div>
-
           </div>
 
-          <div class="flex border rounded h-32 items-center px-6">
-
-            <div class="flex flex-row items-center">
-              <h1 class="bg-yellow-300 text-black p-2 rounded-md">Day2</h1>
-
-              <a href="/color-switch.html"
-                class="mx-4 text-center font-bold">
-                BG Colour switch
-              </a>
-            </div>
-
+          <div class="flex justify-between items-center">
+            <h1 class="font-medium text-lg">Greeting bot</h1>
+            <a href="/greet-bot.html"
+              class="font-light hover:underline cursor-pointer">
+              Demo
+            </a>
           </div>
- 
+
+         </div>
+
+         <!-- task2 -->
+        <div
+            class="flex flex-col border rounded bg-gradient-to-r from-red-400 via-pink-400 to-blue-400 py-4 px-4 max-w-[250px]">
+
+            <div class="flex justify-between items-center mb-4">
+              <h1
+                class="bg-yellow-300 text-black p-1 rounded-md text-xs">Task2</h1>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                  height="32" viewBox="0 0 24 24"><mask id="SVGtXXaGeHA"
+                    width="24" height="24" x="0" y="0"><g fill="#fff"><ellipse
+                        cx="9.5" cy="9" rx="1.5" ry="1" /><ellipse cx="14.5"
+                        cy="9" rx="1.5" ry="1" /></g></mask><g fill="none"
+                    stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"><path
+                      stroke-dasharray="32" stroke-dashoffset="32"
+                      d="M12 4c1.67 0 2.61 0.4 3 0.5c0.53 -0.43 1.94 -1.5 3.5 -1.5c0.34 1 0.29 2.22 0 3c0.75 1 1 2 1 3.5c0 2.19 -0.48 3.58 -1.5 4.5c-1.02 0.92 -2.11 1.37 -3.5 1.5c0.65 0.54 0.5 1.87 0.5 2.5c0 0.73 0 3 0 3M12 4c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5c0 0.73 0 3 0 3"><animate
+                        fill="freeze" attributeName="stroke-dashoffset"
+                        dur="0.7s" values="32;0" /></path><path
+                      stroke-dasharray="10" stroke-dashoffset="10"
+                      d="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5"><animate
+                        attributeName="d" dur="3s" repeatCount="indefinite"
+                        values="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5;M9 19c-1.406 0-3-.5-4-.5-.532 0-1 0-2-.5;M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5" /><animate
+                        fill="freeze" attributeName="stroke-dashoffset"
+                        begin="0.8s" dur="0.2s" values="10;0" /></path></g><rect
+                    width="8" height="4" x="8" y="11" fill="currentColor"
+                    mask="url(#SVGtXXaGeHA)"><animate attributeName="y"
+                      dur="10s" keyTimes="0;0.45;0.46;0.54;0.55;1"
+                      repeatCount="indefinite"
+                      values="11;11;7;7;11;11" /></rect></svg>
+
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <h1 class="font-medium text-lg">Bg-colour switch</h1>
+             <a href="/color-switch.html"
+              class="font-light hover:underline cursor-pointer">
+              Demo
+            </a>
+          </div>
+
+         </div>
+
+
+         <!-- task3 -->
+
+          <div
+            class="flex flex-col border rounded bg-gradient-to-r from-red-400 via-pink-400 to-blue-400 py-4 px-4 max-w-[250px]">
+
+            <div class="flex justify-between items-center mb-4">
+              <h1
+                class="bg-yellow-300 text-black p-1 rounded-md text-xs">Task3</h1>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                  height="32" viewBox="0 0 24 24"><mask id="SVGtXXaGeHA"
+                    width="24" height="24" x="0" y="0"><g fill="#fff"><ellipse
+                        cx="9.5" cy="9" rx="1.5" ry="1" /><ellipse cx="14.5"
+                        cy="9" rx="1.5" ry="1" /></g></mask><g fill="none"
+                    stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"><path
+                      stroke-dasharray="32" stroke-dashoffset="32"
+                      d="M12 4c1.67 0 2.61 0.4 3 0.5c0.53 -0.43 1.94 -1.5 3.5 -1.5c0.34 1 0.29 2.22 0 3c0.75 1 1 2 1 3.5c0 2.19 -0.48 3.58 -1.5 4.5c-1.02 0.92 -2.11 1.37 -3.5 1.5c0.65 0.54 0.5 1.87 0.5 2.5c0 0.73 0 3 0 3M12 4c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5c0 0.73 0 3 0 3"><animate
+                        fill="freeze" attributeName="stroke-dashoffset"
+                        dur="0.7s" values="32;0" /></path><path
+                      stroke-dasharray="10" stroke-dashoffset="10"
+                      d="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5"><animate
+                        attributeName="d" dur="3s" repeatCount="indefinite"
+                        values="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5;M9 19c-1.406 0-3-.5-4-.5-.532 0-1 0-2-.5;M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5" /><animate
+                        fill="freeze" attributeName="stroke-dashoffset"
+                        begin="0.8s" dur="0.2s" values="10;0" /></path></g><rect
+                    width="8" height="4" x="8" y="11" fill="currentColor"
+                    mask="url(#SVGtXXaGeHA)"><animate attributeName="y"
+                      dur="10s" keyTimes="0;0.45;0.46;0.54;0.55;1"
+                      repeatCount="indefinite"
+                      values="11;11;7;7;11;11" /></rect></svg>
+
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <h1 class="font-medium text-lg">Bg-colour switch</h1>
+             <a href="/password-check.html"
+              class="font-light hover:underline cursor-pointer">
+              Demo
+            </a>
+          </div>
+
+         </div>
+
+
+
+          <div
+            class="flex flex-col border rounded bg-gradient-to-r from-red-400 via-pink-400 to-blue-400 py-4 px-4 max-w-[250px]">
+
+            <div class="flex justify-between items-center mb-4">
+              <h1
+                class="bg-yellow-300 text-black p-1 rounded-md text-xs">Task4</h1>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                  height="32" viewBox="0 0 24 24"><mask id="SVGtXXaGeHA"
+                    width="24" height="24" x="0" y="0"><g fill="#fff"><ellipse
+                        cx="9.5" cy="9" rx="1.5" ry="1" /><ellipse cx="14.5"
+                        cy="9" rx="1.5" ry="1" /></g></mask><g fill="none"
+                    stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"><path
+                      stroke-dasharray="32" stroke-dashoffset="32"
+                      d="M12 4c1.67 0 2.61 0.4 3 0.5c0.53 -0.43 1.94 -1.5 3.5 -1.5c0.34 1 0.29 2.22 0 3c0.75 1 1 2 1 3.5c0 2.19 -0.48 3.58 -1.5 4.5c-1.02 0.92 -2.11 1.37 -3.5 1.5c0.65 0.54 0.5 1.87 0.5 2.5c0 0.73 0 3 0 3M12 4c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5c0 0.73 0 3 0 3"><animate
+                        fill="freeze" attributeName="stroke-dashoffset"
+                        dur="0.7s" values="32;0" /></path><path
+                      stroke-dasharray="10" stroke-dashoffset="10"
+                      d="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5"><animate
+                        attributeName="d" dur="3s" repeatCount="indefinite"
+                        values="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5;M9 19c-1.406 0-3-.5-4-.5-.532 0-1 0-2-.5;M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5" /><animate
+                        fill="freeze" attributeName="stroke-dashoffset"
+                        begin="0.8s" dur="0.2s" values="10;0" /></path></g><rect
+                    width="8" height="4" x="8" y="11" fill="currentColor"
+                    mask="url(#SVGtXXaGeHA)"><animate attributeName="y"
+                      dur="10s" keyTimes="0;0.45;0.46;0.54;0.55;1"
+                      repeatCount="indefinite"
+                      values="11;11;7;7;11;11" /></rect></svg>
+
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <h1 class="font-medium text-lg">Text-Formatter</h1>
+             <a href="/text-formatter.html"
+              class="font-light hover:underline cursor-pointer">
+              Demo
+            </a>
+          </div>
+
+         </div>
+       
+
+
       </div>
 
     </section>
