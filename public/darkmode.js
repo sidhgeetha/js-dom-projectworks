@@ -1,31 +1,35 @@
-
-
 // toggle
-  const moonEl = document.getElementById("moon");
-  const sunEl = document.getElementById("sun");
-  const cardsEl = document.querySelectorAll(".book-card");
+const moonEl = document.getElementById("moon");
+const sunEl = document.getElementById("sun");
+const cardsEl = document.querySelectorAll(".book-card");
 
-  sunEl.addEventListener("click", () => {
-    document.body.style.backgroundColor = "black";
-    document.body.style.color = "white";
+// sunEl.addEventListener("click", () => {
+//   document.body.style.backgroundColor = "black";
+//   document.body.style.color = "white";
 
-       cardsEl.forEach((card) => {
-         card.style.backgroundColor = "yellow"; 
-         card.style.color = "white";
-       });
-  });
+//      cardsEl.forEach((card) => {
+//        card.style.backgroundColor = "yellow";
+//        card.style.color = "white";
+//      });
+// });
 
-  moonEl.addEventListener("click", () => {
-    document.body.style.backgroundColor = "white";
-    document.body.style.color = "black";
+// moonEl.addEventListener("click", () => {
+//   document.body.style.backgroundColor = "#60A5FA";
+//   document.body.style.color = "black";
 
-        cardsEl.forEach((card) => {
-          card.style.backgroundColor = "white";
-          card.style.color = "black";
-        });
-  });
+//       cardsEl.forEach((card) => {
+//         card.style.backgroundColor = "white";
+//         card.style.color = "black";
+//       });
+// });
 
+sunEl.addEventListener("click", () => {
+  document.body.style.backgroundColor = "black"; // dark background
+  cardsEl.forEach((card) => (card.style.backgroundColor = "yellow")); // yellow cards
+});
 
+moonEl.addEventListener("click", () => {
+  document.body.style.backgroundColor = "white"; // blue cards
+  cardsEl.forEach((card) => (card.style.backgroundColor = "#60A5FA"));
+});
 
-
- 

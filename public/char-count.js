@@ -7,7 +7,7 @@ function countCharacters(){
     const remaining = charLimit-count;
 
   
-    document.getElementById("charCount").innerText =`${remaining} characters you can type`;
+    document.getElementById("charCount").innerText =`${remaining}/ ${charLimit}`;
 
   const charCountEl = document.getElementById("charCount");
   charCountEl.classList.add("text-red-400", "text-sm");
