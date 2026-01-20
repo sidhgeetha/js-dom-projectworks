@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <header class="bg-orange-700 text-white py-2 border-b text-center border-gray-700  ">
+      <div
+        class="flex container text-center  mx-auto justify-between px-4 py-2">
+        <img class="h-12 w-12" src="/bowl.png">
+
+        <div class="flex justify-between gap-24 text-center">
+          <div class="flex gap-2 mb-4 justify-center items-center">
+            <input
+              type="text"
+              id="dish-input"
+              placeholder="favorite dish name..."
+              class="border text-black px-3 py-2 w-70 " />
+            <button
+              id="add-dish"
+              class="add bg-white  text-black px-4 py-2  ">
+              Add
+            </button>
+
+          </div>
+
+          <p id="error-msg" class="text-red-600 text-sm mt-1"></p>
+
+          <div id="cart" class>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+              viewBox="0 0 24 24"><path fill="currentColor"
+                d="m17.21 9l-4.39-6.57a1 1 0 0 0-1.66 0L6.77 9H.69L4 21h16.02l3.29-12zm-5.22-4.21L14.8 9H9.18zM12 17c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2" /></svg>
+
+            <span id="cart-count"
+              class="bg-orange-500 rounded-full px-2 py-1 text-sm font-bold">0</span>
+          </div>
+        </div>
+
+      </div>
+
+    </header>
+
+    <main class="bg-amber-100 py-12 min-h-screen">
+
+      <div class="container  max-w-7xl mx-auto gap-40 px-4 text-center">
+
+        <h1 class="text-6xl font-extrabold text-amber-500">Order your food
+          here!</h1>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center mt-20">
+
+          <!-- dish1 -->
+          <div
+            class="dish-card bg-white h-64 w-64 overflow-hidden rounded relative">
+            <img class="w-full h-full object-cover "
+              src="/salad.jpg">
+
+            <h1
+              class="dish-name absolute top-0  left-0 w-full text-black text-sm font-bold p-2 bg-gray-200">Signature
+              Salad</h1>
+            <button
+              class="add absolute bottom-0  left-0 w-full text-white text-sm font-bold p-2 bg-orange-600">Add
+            </button>
+          </div>
+
+          <div
+            class="dish-card bg-white h-64 w-64 overflow-hidden rounded relative">
+
+            <h1 id="vegBowl"
+              class="dish-name absolute top-0  left-0 w-full text-black text-sm font-bold p-2 bg-gray-200">Veg
+              bowl</h1>
+            <button
+              class="add absolute bottom-0  left-0 w-full text-white text-sm font-bold p-2 bg-orange-600">Add</button>
+
+            <img class="w-full h-full object-cover"
+              src="/vegrice.jpg">
+          </div>
+
+          <div
+            class="dish-card bg-white h-64 w-64 overflow-hidden rounded relative">
+            <h1
+              class="dish-name absolute top-0  left-0 w-full text-black text-sm font-bold p-2 bg-gray-200">Bento
+              chicken</h1>
+
+            <button
+              class=" add absolute bottom-0  left-0 w-full text-white text-sm font-bold p-2 bg-orange-600">Add
+            </button>
+
+            <img class=" w-full h-full object-cover"
+              src="/bentochicken.jpg">
+          </div>
+
+          <div
+            class="dish-card bg-white h-64 w-64 overflow-hidden rounded relative">
+
+            <h1
+              class="dish-name absolute top-0  left-0 w-full text-black text-sm font-bold p-2 bg-gray-200">Japenese
+              chicken</h1>
+            <button id="add-japchicken"
+              class=" add absolute bottom-0  left-0 w-full text-white text-sm font-bold p-2 bg-orange-600">Add
+            </button>
+            <img class="w-full h-full object-cover"
+              src="/japanese-chicken.jpg">
+          </div>
+
+        </div>
+
+        <ul id="dish-list"
+          class="fixed hidden top-32 right-0 w-64 min-h-screen bg-white shadow-lg rounded-lg text-gray-700 z-50">
+          <h1 class="font-bold text-xl p-4 bg-amber-600 text-white mb-4 ">Cart
+            Items</h1>
+        </ul>
+
+      </main>
+
+      <script type="module" src="./dynamic.js"></script>
+    </body>
+  </html>
