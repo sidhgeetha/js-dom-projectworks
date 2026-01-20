@@ -24,12 +24,23 @@ const cardsEl = document.querySelectorAll(".book-card");
 // });
 
 sunEl.addEventListener("click", () => {
-  document.body.style.backgroundColor = "black"; // dark background
-  cardsEl.forEach((card) => (card.style.backgroundColor = "yellow")); // yellow cards
+  document.body.style.backgroundColor = "black"; 
+ 
+  cardsEl.forEach((card) => (card.style.backgroundColor = "yellow")); 
 });
 
 moonEl.addEventListener("click", () => {
-  document.body.style.backgroundColor = "white"; // blue cards
+  document.body.style.backgroundColor = "white"; 
   cardsEl.forEach((card) => (card.style.backgroundColor = "#60A5FA"));
 });
+
+// const toggleBtn = document.getElementById("moon");
+
+// toggleBtn.addEventListener("click", () =>{
+//   document.body.classList.toggle("dark");
+// })
+
+
+
+
 
