@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/src/style.css" rel="stylesheet">
+    </head>
+    <body class="bg-gray-100  min-h-screen flex items-center justify-center">
+        <main class=" w-full flex flex-col items-center">
+            <div>
+                <h2 class="text-2xl font-bold mb-4 text-center">We value your
+                    feedback!</h2>
+            </div>
+
+            <div class=" bg-white border rounded ">
+
+                <textarea id="textArea" oninput="countCharacters()" rows="5"
+                    placeholder="Type your feedback here..." rows="4"
+                    cols="50"></textarea>
+                <br>
+               
+
+            </div>
+
+            <div>
+                <p>Total character typed: <span id="charCount">0 /200</span></p>
+            </div>
+
+        </main>
+
+        <script  src="./char-count.js"></script>
+    </body>
+</html>

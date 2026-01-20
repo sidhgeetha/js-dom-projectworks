@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml"
+      href="https://api.iconify.design/logos:android.svg" />
+    <!-- <link href="/src/style.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black">
+
+    <main class=" flex justify-center items-center px-4 mt-10">
+
+      <div
+        class="container flex flex-col max-w-lg bg-white rounded-xl shadow-2xl p-6 relative">
+
+        <div id="header" class="flex  justify-between items-start">
+          <h1 id="label" for="text" class="text-2xl m-0">Try <span
+              class="bg-amber-300 p-1 text-black text-2xl font-extrabold rounded-md">SPELL
+              TEST</span> and win toys!</h1>
+        </div>
+
+        <label class="text-blue-800 ml-4 font-medium mb-2">Enter the name of the
+          image youe see 🐧</label>
+        <input id="textInput" type="text" placeholder="type the word correctly!"
+          class="border-2 bg-white rounded-full border-yellow-400 p-4 mb-2 text-center text-gray-600 font-medium">
+        <div class="items-center text-center">
+          <button id="check"
+            class="bg-cyan-700 text-white px-2 py-2 rounded">Check
+            spell</button>
+          <button id="upper"
+            class="bg-indigo-700 text-white px-2 py-2 rounded">Uppercase</button>
+          <button id="lower"
+            class="bg-green-700 text-white px-2 py-2 rounded">Lowercase</button>
+          <button id=clear
+            class="bg-rose-700 text-white px-2 py-2 rounded">Clear
+            Text</button>
+        </div>
+
+      </div>
+
+      <div class="mt-6 flex flex-col items-center w-full">
+       <div>
+                <h2 class="text-2xl font-bold mb-4 text-center">We value your
+                    feedback!</h2>
+            </div>
+
+            <div class=" bg-white border rounded ">
+
+                <textarea id="textArea" oninput="countCharacters()" rows="5"
+                    placeholder="Type your feedback here..." rows="4"
+                    cols="50"></textarea>
+                <br>
+               
+
+            </div>
+
+            <div>
+                <p class ="text-white" >Total character typed: <span id="charCount">0 /200</span></p>
+            </div>
+        <button id="submitFeedback"
+          class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold">
+          Submit Feedback
+        </button>
+      </div>
+
+    </main>
+
+    <script  src="/fontcount.js"></script>
+  </body>
+</html>
