@@ -7,56 +7,27 @@ if (buttonEl) {
   };
 }
 
-// Greeting Bot (Task 1)
-const inputEl = document.getElementById("inputName");
-const submitEl = document.getElementById("submit");
-const resultEl = document.getElementById("greeting");
+// const toggleEl  =document.getElementById("toggle-icon");
 
-if (submitEl) {
-  submitEl.addEventListener("click", (event) => {
-    event.preventDefault();
-    const inputName = inputEl.value.replace(/[0-9]/g, "");
+// const sunEl = document.getElementById("sun");
 
-    if (inputName === "") {
-      alert("Please enter your name!");
-      return;
-    }
+// const moonEl =document.getElementById("moon");
 
-    console.log(`hello ${inputName} welcome to Cyberdude!`);
-    resultEl.innerText = `hello ${inputName}, Welcome to CyberDude!`;
-    resultEl.classList.add("text-white", "font-bold");
-  });
-}
+// const htmlEl = document.documentElement;
 
+// toggleEl.addEventListener("click", ()=>{
+//   htmlEl.classList.toggle("hidden");
+//   sunEl.classList.toggle("hidden");
+//   moonEl.classList.toggle("hidden");
+// })
 
+const toggleBtn = document.getElementById("toggle-icon");
+const body = document.body;
+const sunIcon = toggleBtn.querySelector(".sun");
+const moonIcon = toggleBtn.querySelector(".moon");
 
-// BG Color Switcher (Task 2)
-const colourDivs = document.querySelectorAll("#coloursDiv div");
-if (colourDivs.length) {
-  colourDivs.forEach((div) => {
-    div.addEventListener("click", () => {
-      const color = window.getComputedStyle(div).backgroundColor;
-      document.body.style.backgroundColor = color;
-    });
-  });
-
-  const randomBtnEl = document.getElementById("random");
-  randomBtnEl?.addEventListener("click", () => {
-    const color = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    document.body.style.backgroundColor = color;
-  });
-
-  // Dark Theme Toggle
-  const moonEl = document.getElementById("moon");
-  const sunEl = document.getElementById("sun");
-
-  moonEl?.addEventListener("click", () => {
-    document.body.style.backgroundColor = "#111827";
-    document.body.style.color = "white";
-  });
-
-  sunEl?.addEventListener("click", () => {
-    document.body.style.backgroundColor = "white";
-    document.body.style.color = "black";
-  });
-}
+toggleBtn.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  sunIcon.classList.toggle("hidden");
+  moonIcon.classList.toggle("hidden");
+});
