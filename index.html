@@ -16,9 +16,9 @@
   <body class="bg-white font-sans text-black dark:bg-black dark:text-white">
 
     <!-- Header -->
-    <header class="bg-white text-black dark:bg-black dark:text-white pt-4 border-b  border-gray-700 ">
+    <header class="bg-white text-black dark:bg-black dark:text-white pt-4 border-b mx-auto  border-gray-700 ">
       <div
-        class="flex container text-center py-4 mx-auto px-4 justify-between mb-4">
+        class="flex container text-center py-4 mx-auto justify-between mb-4">
         <div class="flex gap-4 items-center">
            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
           viewBox="0 0 256 256">
@@ -45,22 +45,57 @@
           
       </div>
 
-      <div class="flex justify-between px-10 ">
-        <div>
-        <button id="allTasks"
-          class=" ml-12 border border-slate-500 text-slate-500  p-2 w-24 rounded-md  text-center font-bold">
+      <div class="flex container text-center mx-auto justify-between ">
+        <div class="">
+          <button id="allTasks"
+          class=" border border-slate-500 text-slate-500  p-2 w-24 rounded-md  text-center font-bold">
           All tasks
-        </button>
-        <button id="jan"
+          </button>
+          <button id="jan"
           class=" ml-12 border border-slate-500 text-slate-500  p-2 w-24 rounded-md  text-center font-bold">
           Jan'26
-        </button>
-        <button id="feb"
+          </button>
+          <button id="feb"
           class=" ml-12 border border-slate-500 text-slate-500  p-2 w-24 rounded-md  text-center font-bold">
           Feb'26
-        </button>
+          </button>
         </div>
-        <div class="px-8">
+
+        <div class="px-32">
+           <ul class="flex flex-row gap-12 items-start md:items-center justify-center">
+              <li>
+                <a
+                  href="#Company"
+                  class="hover:text-orange-500 transition-colors cursor-pointer duration-300 flex"
+                >
+                  
+                  <span class="ml-1">About</span>
+                </a>
+              </li>
+              <li class=" group relative ">
+                <a
+                  href="#Learners"
+                  class="  hover:text-orange-500 transition-colors cursor-pointer duration-300"
+                >
+                  Learners
+                  
+                </a>
+                <div class="absolute top-full bg-orange-500   mt-1 shadow-md  scale-y-0 group-hover:scale-y-100 origin-top duration-200 px-4 py-4">
+                  <a class=" block whitespace-nowrap hover:bg-white rounded p-1 ">New to tech</a>
+                  <a class=" block whitespace-nowrap hover:bg-white rounded p-1 r">Career paths</a>
+                  <a class="block whitespace-nowrap hover:bg-white rounded p-1 "> Learning roadmaps</a>
+                   <a class="block whitespace-nowrap hover:bg-white rounded p-1 "> Live monitored programs</a>
+                    <a class="block whitespace-nowrap hover:bg-white rounded p-1 "> Certifications</a>
+                    <a class="block whitespace-nowrap hover:bg-white rounded p-1 "> Community Support</a>
+                </div>
+                
+              </li>
+             </ul>
+        </div>
+
+
+        
+   
            
        
       </div>
@@ -68,14 +103,10 @@
       
     </header>
 
-    <section>
-      <div class=" pl-12 flex flex-row gap-24 ">
+      <main>
 
-      </div>
-    </section>
-
-    <section class="bg-white dark:bg-black dark:text-white py-16 ">
-      <div class="container mx-auto px- text-center">
+            <section class="bg-white dark:bg-black dark:text-white py-16 ">
+      <div class="container mx-auto text-center">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
   
           <!-- task1 -->
@@ -505,9 +536,10 @@
          
       </div>
 
-    </section>
-
-    
+             </section>
+      
+      </main>
+     
 
     <script type="module" src="/src/main.js"></script>
   </body>
