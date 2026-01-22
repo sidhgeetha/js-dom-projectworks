@@ -12,27 +12,30 @@
   </head>
   <body>
 
-    <header class="bg-orange-700 text-white py-2 border-b text-center border-gray-700  ">
+    <header
+      class="bg-orange-700 text-white py-2 border-b text-center border-gray-700  ">
       <div
         class="flex container text-center  mx-auto justify-between px-4 py-2">
         <img class="h-12 w-12" src="/bowl.png">
 
         <div class="flex justify-between gap-24 text-center">
-          <div class="flex gap-2 mb-4 justify-center items-center">
-            <input
-              type="text"
-              id="dish-input"
-              placeholder="favorite dish name..."
-              class="border text-black px-3 py-2 w-70 " />
-            <button
-              id="add-dish"
-              class="add bg-white  text-black px-4 py-2  ">
-              Add
-            </button>
+          <div class="flex flex-col">
+            <div class="flex gap-2 mb-4 justify-center items-center">
+              <input
+                type="text"
+                id="dish-input"
+                placeholder="favorite dish name..."
+                class="border text-black px-3 py-2 w-70 " />
+              <button
+                id="add-dish"
+                class="add bg-white  text-black px-4 py-2  ">
+                Add
+              </button>
 
+            </div>
+
+            <p id="error-msg" class="text-red-600 text-sm mt-1 "></p>
           </div>
-
-          <p id="error-msg" class="text-red-600 text-sm mt-1"></p>
 
           <div id="cart" class>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
