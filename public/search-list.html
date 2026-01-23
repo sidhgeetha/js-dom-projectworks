@@ -7,48 +7,61 @@
 
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="bg-gray-500">
+    <body class="bg-slate-950">
         <header
             class="py-10 px-12 flex row justify-between items-center gap-12 bg-slate-800 dark:text-white">
+            <div class="flex  justify-between gap-72">
+                <div
+                    class="flex gap-2 items-center font-extrabold text-4xl text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                        height="32"
+                        viewBox="0 0 24 24"><path fill="currentColor"
+                            d="M20 18c1.1 0 1.99-.9 1.99-2L22 6a2 2 0 0 0-2-2H4c-1.11 0-2 .89-2 2v10a2 2 0 0 0 2 2H0v2h24v-2zM4 16V6h16v10.01zm5.097-6.047c0-1.027.836-1.864 1.864-1.864c1.027 0 1.864.837 1.864 1.864a1.867 1.867 0 0 1-1.864 1.864a1.867 1.867 0 0 1-1.864-1.864m7.032 4.236l-2.482-2.482a3.2 3.2 0 0 0 .527-1.754A3.216 3.216 0 0 0 10.96 6.74a3.217 3.217 0 0 0-3.214 3.213a3.22 3.22 0 0 0 3.214 3.214a3.2 3.2 0 0 0 1.724-.51l2.489 2.487l.955-.955z" /></svg>
+                    <span
+                        class="text-center text-xl font-bold text-yellow-600">"Search List"</span>
 
-            <div class="flex gap-2 items-center font-extrabold text-4xl text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE --><path fill="currentColor" d="M20 18c1.1 0 1.99-.9 1.99-2L22 6a2 2 0 0 0-2-2H4c-1.11 0-2 .89-2 2v10a2 2 0 0 0 2 2H0v2h24v-2zM4 16V6h16v10.01zm5.097-6.047c0-1.027.836-1.864 1.864-1.864c1.027 0 1.864.837 1.864 1.864a1.867 1.867 0 0 1-1.864 1.864a1.867 1.867 0 0 1-1.864-1.864m7.032 4.236l-2.482-2.482a3.2 3.2 0 0 0 .527-1.754A3.216 3.216 0 0 0 10.96 6.74a3.217 3.217 0 0 0-3.214 3.213a3.22 3.22 0 0 0 3.214 3.214a3.2 3.2 0 0 0 1.724-.51l2.489 2.487l.955-.955z"/></svg>
-                             <div class="text-center text-yellow-500 text-xl font-bold text-slate-200">"Search List"</div>
+                </div>
 
+                <div class="flex flex-col text-center justify-center flex-1">
+                    <input
+                        type="text"
+                        id="search"
+                        class="text-center rounded p-2 w-[400px] text-black"
+                        placeholder="search here..." />
+                        <p id="error" class="text-sm text-red-400"></p>
+                </div>
             </div>
-
-            <div class="flex-1 flex justify-center ">
-                <input type="text" id="search " class="text-center m-6 rounded p-1 w-[400px]" placeholder="seach here..." >
-            </div>
-
-            
-
         </header>
 
         <main class="max-w-7xl min-h-screen mt-12 mx-auto items-center">
-           
 
-            <div class="container mx-auto text-center py-12">
+            <div class="container mx-auto text-center ">
 
                 <div
-                    class="flex flex-col md:flex-row justify-center gap-12 max-w-6xl mx-auto">
-                    
-                    
-                  
+                    class="flex flex-col md:flex-row justify-center  max-w-6xl mx-auto">
 
-                    <div class="flex flex-col gap-6 items-center justify-center">
-                        <ul class="program-list text-white  gap-12 w-[600px]">
-                           <li id="list" class="border mb-12 p-2 rounded">Java</li>
-                           <li id="list" class="border mb-12   p-2 rounded">C++</li>
-                           <li id="list" class="border mb-12  p-2 rounded">Javascript</li>
-                           <li id="list" class="border mb-12  p-2 rounded">Phthon</li>
-                           <li id="list" class="border mb-12  p-2 rounded">NextjS</li>
-                           <li id="list" class="border mb-12  p-2 rounded">React</li>
-                           <li id="list" class="border mb-12  p-2 rounded">HTML</li>
-                           <li id="list" class="border mb-12  p-2 rounded">CSS</li>
+                    <div class="flex justify-center">
+                        <ul
+                            class="program-list text-white w-[600px]  flex flex-col items-center">
+                            <li id="list"
+                                class=" list border mb-12 p-2 w-[300px] items-center text-center rounded bg-green-300 text-slate-800">Java</li>
+                            <li id="list"
+                                class=" list border mb-12  w-[300px] p-2 rounded bg-green-300 text-slate-800">C++</li>
+                            <li id="list"
+                                class="list border mb-12  w-[300px] p-2 rounded bg-green-300 text-slate-800">Javascript</li>
+                            <li id="list"
+                                class="list  border mb-12 w-[300px] p-2 rounded bg-green-300 text-slate-800">Phthon</li>
+                            <li id="list"
+                                class="list  border mb-12 w-[300px] p-2 rounded bg-green-300 text-slate-800">NextjS</li>
+                            <li id="list"
+                                class="list  border mb-12 w-[300px] p-2 rounded bg-green-300 text-slate-800">React</li>
+                            <li id="list"
+                                class="list  border mb-12 w-[300px] p-2 rounded bg-green-300 text-slate-800">HTML</li>
+                            <li id="list"
+                                class="list  border mb-12 w-[300px] p-2 rounded bg-green-300 text-slate-800">CSS</li>
                         </ul>
                     </div>
-                   
+
                 </div>
 
             </div>
