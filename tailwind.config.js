@@ -6,3 +6,12 @@ export default {
   },
   plugins: [],
 };
+
+tailwind.config = {
+  theme: {
+    extend: {},
+  },
+  corePlugins: {
+    cursor: true, 
+  },
+};

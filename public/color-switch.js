@@ -1,4 +1,3 @@
-// BG Color Switcher (Task 2)
 const colourDivs = document.querySelectorAll("#coloursDiv div");
 if (colourDivs.length) {
   colourDivs.forEach((div) => {
