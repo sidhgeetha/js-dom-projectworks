@@ -1,0 +1,99 @@
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BG Color Switcher</title>
+        <link rel="icon" type="image/svg+xml"
+            href="https://api.iconify.design/logos:randomcolor.svg" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            darkMode: 'class' 
+        }
+    </script>
+    </head>
+    <body class=" text-black bg-slate-900 dark:text-white">
+
+        <main class="min-h-screen mt-24 flex justify-center">
+            <div class="w-fit">
+
+                <input
+                    class="w-full p-8 text-2xl bg-slate-400  text-gray-800 rounded-t-xl shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                    id="display"
+                    readonly>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-3 w-fit mx-auto py-8 rounded-b-xl  bg-slate-900 shadow-[5px_5px_12px_rgba(0,0,0,0.5),-5px_-5px_12px_rgba(255,255,255,0.05)] px-8">
+
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-slate-800 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="appendToDisplay('I')">I</button>
+
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-slate-800 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="appendToDisplay('V')">V</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-slate-800 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="appendToDisplay('X')">X</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-slate-800 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="appendToDisplay('L')">L</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-slate-800 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="appendToDisplay('C')">C</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-slate-800 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="appendToDisplay('D')">D</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-slate-800 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="appendToDisplay('M')">M</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-indigo-400 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="toNumber()">?</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-cyan-600 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="appendToDisplay('+')">+</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-cyan-600 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="appendToDisplay('-')">-</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-amber-400 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="calculate()">=</button>
+
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-rose-800 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                        onclick="clearDisplay()">CL</button>
+
+                </div>
+            </div>
+
+        </main>
+
+        <div class="text-center  mb-24">
+            <a href="index.html"
+                class="text-blue-600 hover:underline">⬅️
+                Back to Home</a>
+        </div>
+
+        <script src="/romancalculator.js"></script>
+    </body>
+</html>
+
+<!-- <button
+    class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-cyan-600 text-white
+         shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+    onclick="toNumber()">?123</button> -->

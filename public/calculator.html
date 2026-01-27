@@ -1,0 +1,238 @@
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BG Color Switcher</title>
+        <link rel="icon" type="image/svg+xml"
+            href="https://api.iconify.design/logos:randomcolor.svg" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            darkMode: 'class' 
+        }
+    </script>
+    </head>
+    <body class=" text-black bg-white dark:text-white">
+
+        <!-- <main class="container w-full flex justify-center items-center">
+            <div class="w-fit">
+
+                <h1
+                    class="text-3xl font-bold text-white dark:text-white mb-4 text-center">Basic
+                    Calculator</h1>
+
+                <input
+                    class="w-full p-6 text-xl bg-stone-800  text-white rounded-t-3xl border-b border-gray"
+                    id="display"
+                    readonly>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 w-fit mx-auto py-4   bg-stone-800 px-6 rounded-b-3xl">
+
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="clearDisplay()">C</button>
+
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="toggleSign()">+/-</button>
+
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('%')">%</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-amber-500 text-white"
+                        onclick="appendToDisplay('/')">/</button>
+
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('7')">7</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('8')">8</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('9')">9</button>
+
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-amber-500 text-white"
+                        onclick="appendToDisplay('*')">*</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('4')">4</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('5')">5</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('6')">6</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-amber-500 text-white"
+                        onclick="appendToDisplay('-')">-</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('1')">1</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('2')">2</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('3')">3</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-amber-500 text-white"
+                        onclick="appendToDisplay('+')">+</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white items-center text-center flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                            height="32"
+                            viewBox="0 0 24 24"><path
+                                fill="currentColor"
+                                d="M17 21H9c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3h8c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3M9 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h8c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1z" /><circle
+                                cx="10" cy="11" r="1"
+                                fill="currentColor" /><circle cx="13" cy="11"
+                                r="1" fill="currentColor" /><circle cx="16"
+                                cy="11" r="1" fill="currentColor" /><circle
+                                cx="10" cy="14" r="1"
+                                fill="currentColor" /><circle cx="13" cy="14"
+                                r="1" fill="currentColor" /><circle cx="16"
+                                cy="14" r="1" fill="currentColor" /><circle
+                                cx="10" cy="17" r="1"
+                                fill="currentColor" /><circle cx="13" cy="17"
+                                r="1" fill="currentColor" /><circle cx="16"
+                                cy="17" r="1" fill="currentColor" /><path
+                                fill="currentColor"
+                                d="M16 7v1h-6V7zm1-1H9v3h8z" /></svg>
+                    </button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('.')">0</button>
+
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-stone-500 text-white"
+                        onclick="appendToDisplay('.')">.</button>
+
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-amber-500 text-white"
+                        onclick="calculate()">=</button>
+
+                </div>
+            </div>
+
+        </main> -->
+
+        <main
+            class="min-h-screen flex justify-center items-center  bg-gray-100">
+            <!-- Calculator Card -->
+            <div
+                class="bg-indigo-50 p-8 rounded-2xl  shadow-[5px_5px_12px_rgba(0,0,0,0.16),inset_5px_5px_12px_#ffffff] w-[360px]">
+
+                <input
+                    id="display"
+                    class="w-full p-6 text-xl bg-gray-100 shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-950 rounded-2xl mb-6"
+                    readonly />
+
+                <!-- Buttons Grid -->
+                <div class="grid grid-cols-4 gap-4">
+
+                    <!-- First Row -->
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full  shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="clearDisplay()">C</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="toggleSign()">+/-</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('%')">%</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('/')">/</button>
+
+                    <!-- Second Row -->
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('7')">7</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('8')">8</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('9')">9</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('*')">*</button>
+
+                    <!-- Third Row -->
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('4')">4</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('5')">5</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('6')">6</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('-')">-</button>
+
+                    <!-- Fourth Row -->
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('1')">1</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('2')">2</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('3')">3</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('+')">+</button>
+
+                    <!-- Fifth Row -->
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900 flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                            height="32" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M17 21H9c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3h8c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3M9 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h8c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1z" />
+                            <circle cx="10" cy="11" r="1" fill="currentColor" />
+                            <circle cx="13" cy="11" r="1" fill="currentColor" />
+                            <circle cx="16" cy="11" r="1" fill="currentColor" />
+                            <circle cx="10" cy="14" r="1" fill="currentColor" />
+                            <circle cx="13" cy="14" r="1" fill="currentColor" />
+                            <circle cx="16" cy="14" r="1" fill="currentColor" />
+                            <circle cx="10" cy="17" r="1" fill="currentColor" />
+                            <circle cx="13" cy="17" r="1" fill="currentColor" />
+                            <circle cx="16" cy="17" r="1" fill="currentColor" />
+                            <path fill="currentColor"
+                                d="M16 7v1h-6V7zm1-1H9v3h8z" />
+                        </svg>
+                    </button>
+
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full bg-gray-100 shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('0')">0</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-mediumitems-center rounded-full bg-stone-100 shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="appendToDisplay('.')">.</button>
+                    <button
+                        class="w-[70px] h-[70px] text-xl font-medium rounded-full shadow-[inset_-5px_-5px_12px_#ffffff,inset_5px_5px_12px_rgba(0,0,0,0.16)] text-gray-900"
+                        onclick="calculate()">=</button>
+
+                </div>
+            </div>
+        </main>
+
+        <div class="text-center  mb-24">
+            <a href="index.html"
+                class="text-blue-600 hover:underline">⬅️
+                Back to Home</a>
+        </div>
+
+        <script src="/calculator.js"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BG Color Switcher</title>
+        <link rel="icon" type="image/svg+xml"
+            href="https://api.iconify.design/logos:randomcolor.svg" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            darkMode: 'class' 
+        }
+    </script>
+    </head>
+    <body class=" text-black bg-slate-900 dark:text-white">
+
+        <main class="min-h-screen mt-24 flex justify-center">
+            <div class="w-fit">
+                <h1 class="text-center text-4xl font-bold text-green-500 mb-12">Periodic Table</h1>
+                <div
+                    class="flex flex-row justify-center items-center-safe gap-8">
+
+                    <div class="flex flex-col items-center-safe">
+                        <h1 class="text-xl text-white font-regular pb-2">Total
+                            Electrons</h1>
+                        <input
+                            class="w-100 p-4 text-xl border-2 border-green-600 bg-slate-200 text-red-600  shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                            id="electron-display"
+                            readonly>
+                    </div>
+                    <div class="flex flex-col items-center-safe">
+                        <h1
+                            class="text-xl text-white font-regular pb-2">Element</h1>
+                        <input
+                            class="w-100 p-4 text-xl bg-slate-200 border-2 border-green-600 text-red-600  shadow-[inset_-5px_-5px_12px_rgba(255,255,255,0.05),inset_5px_5px_12px_rgba(0,0,0,0.3)]"
+                            id="element-display"
+                            readonly>
+                    </div>
+                </div>
+                <!-- <div id="elementbox"
+                    class="grid grid-cols-[repeat(18,minmax(0,1fr))] grid-rows-[repeat(7,minmax(0,1fr))]
+         gap-3 w-fit mx-auto py-8 rounded-b-xl bg-slate-900
+         shadow-[5px_5px_12px_rgba(0,0,0,0.5),-5px_-5px_12px_rgba(255,255,255,0.05)]
+         px-8">
+                </div> -->
+                <div
+                    id="elementbox"
+                    class="grid grid-cols-[repeat(18,4rem)] gap-x-2 gap-y-2 mx-auto p-4 bg-slate-900 rounded-xl"></div>
+
+            </main>
+
+            <div class="text-center  mb-24">
+                <a href="index.html"
+                    class="text-blue-600 hover:underline">⬅️
+                    Back to Home</a>
+            </div>
+
+            <script src="/periodic.js"></script>
+
+        </body>
+    </html>
