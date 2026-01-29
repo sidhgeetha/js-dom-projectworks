@@ -1,8 +1,7 @@
 ## JavaScript DOM Tasks 🚀
 
-# This repository contains a collection of JavaScript DOM mini projects
-
-# Each task focuses on improving DOM manipulation skills and interactive UI behavior
+## This repository contains a collection of JavaScript DOM mini projects
+- Each task focuses on improving DOM manipulation skills and interactive UI behavior
 
 # Task1 – Greeting Bot
 
