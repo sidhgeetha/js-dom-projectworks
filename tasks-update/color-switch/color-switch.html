@@ -8,31 +8,25 @@
             href="https://api.iconify.design/logos:randomcolor.svg" />
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="bg-white">
+    <body class="bg-gray-50">
 
-        <header>
-            <div class="flex justify-between items-center px-24 py-6">
-                <!-- <div class="flex  items-center gap-4 ">
-                    <div>
-                        <svg class="text-black dark:text-white"
-                            xmlns="http://www.w3.org/2000/svg" width="32"
-                            height="32" viewBox="0 0 24 24"><path
-                                fill="currentColor"
-                                d="M7.5 22q-1.45 0-2.475-1.025T4 18.5v-13q0-1.45 1.025-2.475T7.5 2H18q.825 0 1.413.587T20 4v12.525q0 .2-.162.363t-.588.362q-.35.175-.55.5t-.2.75t.2.763t.55.487t.55.413t.2.562v.25q0 .425-.288.725T19 22zM9 15q.425 0 .713-.288T10 14V5q0-.425-.288-.712T9 4t-.712.288T8 5v9q0 .425.288.713T9 15m-1.5 5h9.325q-.15-.35-.237-.712T16.5 18.5q0-.4.075-.775t.25-.725H7.5q-.65 0-1.075.438T6 18.5q0 .65.425 1.075T7.5 20" /></svg>
-                    </div>
+        <main class="max-w-4xl py-24 mx-auto">
 
-                    <h1
-                        class="text-black dark:text-white font-extrabold text-4xl ">Find
-                        your
-                        favorite books</h1>
-                </div> -->
+            <div
+                class=" flex justify-between items-center gap-4 rounded-2xl mb-20 gap-8 p-4 ">
+                <div class="flex flex-row items-center gap-4">
+                    <h5
+                        class="text-4xl font-extrabold bg-gradient-to-r from-cyan-300 via-green-400 to-yellow-300 bg-clip-text text-transparent">BG
+                        color-switch!</h5>
+                    <img class="w-16 h-16 "
+                        src="https://api.iconify.design/logos:randomcolor.svg" />
+                </div>
 
-                <div
-                    class=" flex gap-2 items-center bg-gray-400 px-2 py-2 rounded-full">
+                <div class=" flex justify-between items-center gap-4 bg-gray-400 p-2 rounded-2xl backdrop-blur-md shadow-md">
                     <button id="moon" class>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24"
-                            viewBox="0 0 24 24"><g
+                            viewBox="0 0 24 24"><!-- Icon from Material Line Icons by Vjacheslav Trushkin - https://github.com/cyberalien/line-md/blob/master/license.txt --><g
                                 fill="none" stroke="currentColor"
                                 stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2"><path stroke-dasharray="2"
@@ -209,89 +203,31 @@
                 </div>
             </div>
 
-        </header>
-
-        <main class="max-w-7xl py-24 mx-auto px-4">
-
             <div
-                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
-
-                <div
-                    class="w-full bg-blue-400 book-card p-6 border-2 border-black ">
-                    <h5 class="text-2xl font-bold text-gray-800 mb-1">The
-                        Jungle</h5>
-                    <h6 class="text-sm text-gray-500 mb-3">Author</h6>
-                    <p class="text-gray-700 text-sm mb-4">
-                        Discover a world of imagination and learning through
-                        stories that entertain, educate, and inspire.
-                    </p>
-                    <div class="flex justify-between gap-4">
-                        <button
-                            class="text-white text-sm bg-black rounded p-2">View
-                            book holders</button>
-                        <button
-                            class="text-white text-sm bg-black rounded p-2">Library</button>
-                    </div>
+                class="max-w-4xl mx-auto p-8 rounded-3xl bg-indigo-100/50 backdrop-blur-md shadow-indigo-800/50 shadow-lg">
+                <div id="coloursDiv"
+                    class="flex flex-row justify-center gap-12">
+                    <div id="pink"
+                        class="w-24 h-24 rounded-full shadow-lg shadow-pink-500/50 bg-pink-500"></div>
+                    <div id="cyan"
+                        class="w-24 h-24 rounded-full shadow-lg shadow-cyan-400/50 bg-cyan-400"></div>
+                    <div id="rose"
+                        class="w-24 h-24 rounded-full shadow-lg shadow-rose-400/50 bg-rose-400"></div>
+                    <div id="blue"
+                        class="w-24 h-24 rounded-full shadow-lg shadow-blue-500/50 bg-blue-500"></div>
+                    <div id="green"
+                        class="w-24 h-24 rounded-full shadow-lg shadow-green-400/50 bg-green-400"></div>
+                    <div id="random"
+                        class="w-24 h-24 rounded-full bg-green-400 text-white font-extrabold flex items-center justify-center text-sm">Random</div>
                 </div>
-
-                <div
-                    class="w-full bg-blue-400 book-card p-6 border-2 border-black ">
-                    <h5 class="text-2xl font-bold text-gray-800 mb-1">Murderous maths</h5>
-                    <h6 class="text-sm text-gray-500 mb-3">Author</h6>
-                    <p class="text-gray-700 text-sm mb-4">
-                        Discover a world of imagination and learning through
-                        stories that entertain, educate, and inspire.
-                    </p>
-                    <div class="flex justify-between gap-4">
-                        <button
-                            class="text-white text-sm bg-black rounded p-2">View
-                            book holders</button>
-                        <button
-                            class="text-white text-sm bg-black rounded p-2">Library</button>
-                    </div>
-                </div>
-                <div
-                    class="w-full bg-blue-400 book-card p-6 border-2 border-black ">
-                    <h5 class="text-2xl font-bold text-gray-800 mb-1">Horrible science</h5>
-                    <h6 class="text-sm text-gray-500 mb-3">Author</h6>
-                    <p class="text-gray-700 text-sm mb-4">
-                        Discover a world of imagination and learning through
-                        stories that entertain, educate, and inspire.
-                    </p>
-                    <div class="flex justify-between gap-4">
-                        <button
-                            class="text-white text-sm bg-black rounded p-2">View
-                            book holders</button>
-                        <button
-                            class="text-white text-sm bg-black rounded p-2">Library</button>
-                    </div>
-                </div>
-                <div
-                    class="w-full bg-blue-400 book-card p-6 border-2 border-black ">
-                    <h5 class="text-2xl font-bold text-gray-800 mb-1">Wimpy</h5>
-                    <h6 class="text-sm text-gray-500 mb-3">Author</h6>
-                    <p class="text-gray-700 text-sm mb-4">
-                        Discover a world of imagination and learning through
-                        stories that entertain, educate, and inspire.
-                    </p>
-                    <div class="flex justify-between gap-4">
-                        <button
-                            class="text-white text-sm bg-black rounded p-2">View
-                            book holders</button>
-                        <button
-                            class="text-white text-sm bg-black rounded p-2">Library</button>
-                    </div>
-                </div>
-
             </div>
 
+            <div class="text-center mt-10">
+                <a href="index.html" class="text-blue-600 hover:underline">⬅️
+                    Back to Home</a>
+            </div>
         </main>
 
-        <div class="text-center mt-10">
-            <a href="index.html" class="text-blue-600 hover:underline">⬅️
-                Back to Home</a>
-        </div>
-
-        <script type="module" src="/darkmode.js"></script>
+        <script type="module" src="./color-switch.js"></script>
     </body>
 </html>
