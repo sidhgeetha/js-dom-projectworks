@@ -3,6 +3,8 @@
 ## This repository contains a collection of JavaScript DOM mini projects
 - Each task focuses on improving DOM manipulation skills and interactive UI behavior
 
+- Demo link : sidhgeetha-jsprojects.netlify.app
+
 # Task1 – Greeting Bot
 
 - Create an input field to enter a user name
