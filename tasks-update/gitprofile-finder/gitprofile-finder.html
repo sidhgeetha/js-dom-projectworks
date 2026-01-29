@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale= 1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+            rel="stylesheet">
+        <title>GitHub Profile Finder</title>
+        <script src="https://unpkg.com/lucide@latest"></script>
+
+    </head>
+    <!-- <body class="bg-black min-h-screen  ">
+    <div class="flex flex-col items-center gap-6 w-full max-w-md px-4">
+
+      <h1 class="text-center mb-4 text-6xl font-bold  text-white">GitHub Profile
+        Finder</h1>
+      <div>
+
+        <div
+          class="flex flex-col md:flex-row gap-4 w-full">
+          <input id="input" type="text"
+            placeholder="enter username"
+            class="px-6 py-4 text-white w-[400px] bg-white/10 backdrop-blur-xl border border-white/20
+                 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-400 w-full" />
+          <button id="searchButton"
+            class="px-6 py-4 rounded-full w-full flex items-center gap-2 justify-center bg-purple-700/30 backdrop-blur-xl
+                 border border-white/30 font-semibold hover:border-blue-600 transition-all text-slate-300">Search</button>
+        </div>
+
+      </div>
+
+      <div id="profile" class="mt-6 flex justify-center"></div>
+
+    </div>
+
+  </body> -->
+
+    <body class="bg-black text-center px-12 py-12 text-white min-h-screen">
+
+        <!-- Page Title -->
+        <h1
+            class="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-800 via-green-400 to-purple-400 
+             bg-clip-text text-transparent mb-12">
+            GitHub Profile Finder
+        </h1>
+
+        <!-- Main Search Area -->
+        <main class="flex flex-col items-center w-full max-w-2xl mx-auto">
+
+            <!-- Input + Button -->
+            <div class="flex flex-col md:flex-row gap-4 w-full mb-10">
+                <input
+                    type="text"
+                    id="input"
+                    placeholder="Enter GitHub username..."
+                    class="px-6 py-4 text-white bg-white/10 backdrop-blur-xl border border-white/20 
+               rounded-full focus:outline-none focus:ring-2 focus:ring-purple-400 w-full" />
+                <button
+                    id="searchButton"
+                    class="px-6 py-4 rounded-full w-full md:w-[200px] flex items-center gap-2 justify-center 
+               bg-purple-700/30 backdrop-blur-xl border border-white/30 font-semibold 
+               hover:border-blue-600 transition-all text-white">
+                    Search
+                    <span><i data-lucide="search" class="w-5 h-5"></i></span>
+                </button>
+            </div>
+
+            <!-- Profile Result -->
+            <div id="profile" class="mt-6 w-full flex justify-center"></div>
+
+        </main>
+
+        <script src="./gitprofile.js"></script>
+    </html>
