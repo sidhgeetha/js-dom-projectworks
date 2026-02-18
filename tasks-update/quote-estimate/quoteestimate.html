@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Smart Quote Builder</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-gray-50 text-gray-800">
+
+        <header class="bg-white shadow-sm">
+            <div
+                class="max-w-7xl mx-auto py-4 flex items-center justify-between">
+
+                <div class="text-2xl font-bold text-purple-600">
+                    QuoteBuilder
+                </div>
+
+                <nav class="flex gap-6 text-sm">
+                    <a href="#"
+                        class="hover:bg-purple-600 hover:rounded-full px-2 py-2 hover:text-sm hover:text-white">Home</a>
+                    <a href="#"
+                        class="hover:bg-purple-600 hover:rounded-full px-2 py-2 hover:text-sm hover:text-white">Services</a>
+
+                </nav>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto  py-10">
+
+            <div class="flex flex-row justify-between gap-12 py-12">
+                <div class="flex flex-col justify-center left-0">
+                    <h1
+                        class="text-5xl text-purple-700 justify-baseline font-bold ">
+                        Estimate your project quote!
+
+                    </h1>
+
+                    <span class=" text-gray-600 mt-2">Your project, your
+                        budget – get an estimate now.</span>
+                    <p class="text-gray-600">
+                        Choose your requirements to get an instant cost estimate
+                    </p>
+                    <button
+                        class="w-[180px] mt-6 bg-green-600 text-white px-2 py-2 rounded-xl top-0">START
+                        ESTIMATE</button>
+
+                    <!-- <div class="flex flex-row  py-12 justify-between gap-12">
+                        <div><img class="w-[200px] " src="/image1.png"></div>
+                        <div><img class="w-[200px]" src="/iamgee.png"></div>
+                        <div><img class="w-[200px]" src="/sap.png"></div>
+                    </div> -->
+
+                </div>
+
+                <div>
+                    <img class="w-[500px] shadow-lg" src="/2713670.jpg">
+                </div>
+
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-8 space-y-8">
+
+                <!-- DIV 2: Project Type Chips -->
+                <div class="flex flex-wrap gap-3">
+                    <button
+                        class="px-4 py-2 rounded-full border bg-blue-50 border-green-500 text-green-600 text-sm">
+                        Landing Page
+                    </button>
+                    <button class="px-4 py-2 rounded-full border text-sm">
+                        Business Website
+                    </button>
+                    <button class="px-4 py-2 rounded-full border text-sm">
+                        Web App
+                    </button>
+                    <button class="px-4 py-2 rounded-full border text-sm">
+                        Mobile App
+                    </button>
+                    <button class="px-4 py-2 rounded-full border text-sm">
+                        SAP Product
+                    </button>
+                    <button class="px-4 py-2 rounded-full border text-sm">
+                        Construction website
+                    </button>
+                </div>
+
+                <div>
+                    <h1 class="text-2xl font-semibold mb-2">
+                        Estimate Your Project Cost
+
+                    </h1>
+
+                    <p class="text-gray-600">
+                        Answer a few questions to get an instant cost estimate
+                    </p>
+                </div>
+
+                <!-- DIV 3: Split Layout -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+
+                    <!-- LEFT DIV: Inputs -->
+                    <div class="lg:col-span-2 space-y-6">
+
+                        <!-- Section title -->
+                        <h2 class="text-lg font-medium">
+                            Project Type
+                        </h2>
+
+                        <div class="space-y-2">
+                            <label
+                                class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                <div class="flex items-center gap-2">
+                                    <input type="radio"
+                                        name="projectType"
+                                        value="basic"
+                                        class="form-radio h-5 w-5 text-purple-700">
+                                    <span>Basic Website</span>
+                                </div>
+                                <span
+                                    class="text-gray-600 font-medium">£500</span>
+                            </label>
+
+                            <label
+                                class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                <div class="flex items-center gap-2">
+                                    <input type="radio"
+                                        name="projectType"
+                                        value="ecommerce"
+                                        class="form-radio h-5 w-5 text-purple-700">
+                                    <span>E-commerce Website</span>
+                                </div>
+                                <span
+                                    class="text-gray-600 font-medium">£1500</span>
+                            </label>
+
+                            <label
+                                class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                <div class="flex items-center gap-2">
+                                    <input type="radio"
+                                        name="projectType"
+                                        value="simple"
+                                        class="form-radio h-5 w-5 text-purple-700">
+                                    <span>Simple App</span>
+                                </div>
+                                <span
+                                    class="text-gray-600 font-medium">£800</span>
+                            </label>
+
+                            <label
+                                class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                <div class="flex items-center gap-2">
+                                    <input type="radio"
+                                        name="projectType"
+                                        value="advanced"
+                                        class="form-radio h-5 w-5 text-purple-700">
+                                    <span>Advanced App</span>
+                                </div>
+                                <span
+                                    class="text-gray-600 font-medium">£2500</span>
+                            </label>
+                        </div>
+
+                        <!-- second -->
+
+                        <div class="lg:col-span-2 space-y-6">
+
+                            <!-- Section title -->
+                            <h2 class="text-lg font-medium">
+                                Timeline
+                            </h2>
+
+                            <div class="space-y-2">
+                                <label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio"
+                                            name="timeline"
+                                            value="basic"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>1 Month</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£500</span>
+                                </label>
+
+                                <label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio"
+                                            name="timeline"
+                                            value="ecommerce"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>2 Months</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£1500</span>
+                                </label>
+
+                                <label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio"
+                                            name="timeline"
+                                            value="simple"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>3 Months</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£800</span>
+                                </label>
+
+                                <label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio"
+                                            name="timeline"
+                                            value="advanced"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>4 Months</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£2500</span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <!-- 3rd quest -->
+
+                        <div class="lg:col-span-2 space-y-6">
+
+                            <!-- Section title -->
+                            <h2 class="text-lg font-medium">
+                                What type of project are you building?
+                            </h2>
+
+                            <div class="space-y-2">
+                                <label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio"
+                                            name="projectCategory"
+                                            value="info" data-cost="500"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>Informational Website</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£500</span>
+                                </label>
+
+                                <label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio"
+                                            name="projectCategory"
+                                            value="ecommerce" data-cost="1500"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>E-commerce Website</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£1500</span>
+                                </label><label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio"
+                                            name="projectCategory"
+                                            value="sap" data-cost="4000"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>SAP / Enterprise Product</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£4000</span>
+                                </label>
+
+                                <label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio"
+                                            name="timeline"
+                                            value="advanced"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>4 Months</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£2500</span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <!-- 4th -->
+
+                        <div class="lg:col-span-2 space-y-6">
+
+                            <!-- Section title -->
+                            <h2 class="text-lg font-medium">
+                                How many pages or screens do you need?
+                            </h2>
+
+                            <div class="space-y-2">
+                                <label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio" name="pages"
+                                            value="5"
+                                            data-cost="0"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>1–5 pages</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£0</span>
+                                </label>
+                                <label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio" name="pages"
+                                            value="10"
+                                            data-cost="300"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>6–10 pages</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£300</span>
+                                </label>
+
+                                <label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio"
+                                            name="projectCategory"
+                                            value="sap" data-cost="4000"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>SAP / Enterprise Product</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£4000</span>
+                                </label>
+
+                                <label
+                                    class="flex justify-between items-center bg-gray-100 p-3 rounded-md cursor-pointer hover:bg-gray-200">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio" name="pages"
+                                            value="20"
+                                            data-cost="700"
+                                            class="form-radio h-5 w-5 text-purple-700">
+                                        <span>11–20 pages</span>
+                                    </div>
+                                    <span
+                                        class="text-gray-600 font-medium">£700</span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- summary right -->
+
+                    <div
+                        class="bg-gray-50 rounded-lg p-6 space-y-6 it">
+
+                        <h3 class="text-lg font-medium">
+                            Your Project Summary
+                        </h3>
+
+                        <div class="text-sm space-y-1 text-gray-700">
+
+                        </div>
+
+                        <!-- Price -->
+                        <div class="border-t pt-4">
+                            <p class="text-sm text-gray-500">Estimated cost</p>
+                            <!-- <p class="text-2xl font-semibold">
+                                £1,800 – £2,200
+                            </p> -->
+                            <p id="totalAmount" class="text-2xl font-semibold">
+                                £0
+                            </p>
+
+                        </div>
+
+                        <!-- CTA buttons -->
+                        <div class="space-y-3">
+                            <button
+                                class="w-full bg-purple-600 text-white py-3 rounded-md text-sm hover:bg-blue-700">
+                                Book a Call for clarify
+                            </button>
+                            <button
+                                class="w-full border py-3 rounded-md text-sm bg-green-400 hover:bg-gray-100">
+                                Get Quote
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="flex flex-row  py-12 justify-between gap-12">
+                        <div><img  src="/image1.png"></div>
+                        <div><img  src="/iamgee.png"></div>
+                        <div><img  src="/sap.png"></div>
+                    </div> -->
+
+            <div class="flex flex-row py-12 gap-12 justify-center">
+
+                <div class=" border rounded-xl p-4 shadow-lg border-green-400">
+
+                    <div
+                        class="w-[300px] bg-gray-100 shadow-lg  rounded-lg mb-4 flex items-center justify-center text-gray-400 text-sm">
+                        <img src="/ecommerce.jpg">
+                    </div>
+
+                    <h3 class="font-semibold text-lg mb-1">Web App</h3>
+                    <p class="text-sm text-gray-600">
+                        Simple website
+                    </p>
+                    <button
+                        class="mt-4 w-full rounded-lg bg-purple-600 py-2 text-white font-medium hover:bg-purple-700">
+                        View Quote
+                    </button>
+                </div>
+
+                <div class=" border rounded-xl p-4 shadow-lg border-green-400">
+
+                    <div
+                        class="w-[300px] bg-gray-100 shadow-lg  rounded-lg mb-4 flex items-center justify-center text-gray-400 text-sm">
+                        <img src="/sapproduct.jpg">
+                    </div>
+
+                    <h3 class="font-semibold text-lg mb-1">Web App</h3>
+                    <p class="text-sm text-gray-600">
+                        Simple website
+                    </p>
+                    <button
+                        class="mt-4 w-full rounded-lg bg-purple-600 py-2 text-white font-medium hover:bg-purple-700">
+                        View Quote
+                    </button>
+                </div>
+
+                <div class=" border rounded-xl p-4 shadow-lg border-green-400">
+
+                    <div
+                        class="w-[300px] bg-gray-100 shadow-lg  rounded-lg mb-4 flex items-center justify-center text-gray-400 text-sm">
+                        <img src="/sapproduct.jpg">
+                    </div>
+
+                    <h3 class="font-semibold text-lg mb-1">Web App</h3>
+                    <p class="text-sm text-gray-600">
+                        Simple website
+                    </p>
+                    <button
+                        class="mt-4 w-full rounded-lg bg-purple-600 py-2 text-white font-medium hover:bg-purple-700">
+                        View Quote
+                    </button>
+                </div>
+
+            </div>
+
+        </main>
+
+        <div class="bg-slate-700 w-full mb-12">
+            <footer class=" mt-16 ">
+                <div
+                    class=" px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white">
+
+                    <!-- Left -->
+                    <p>© 2026 YourCompanyName. All rights reserved.</p>
+
+                    <!-- Right -->
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-gray-900">Privacy
+                            Policy</a>
+                        <a href="#" class="hover:text-gray-900">Terms</a>
+                        <a href="#" class="hover:text-gray-900">Contact</a>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+        <script type="module" src="./quoteestimate.js"></script>
+    </body>
+</html>
